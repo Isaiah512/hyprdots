@@ -1,0 +1,36 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+exec = gsettings set org.gnome.desktop.interface icon-theme 'Breeze-Noir-White-Blue'
+exec = gsettings set org.gnome.desktop.interface gtk-theme 'VALYRIAN-Blue-Steel'
+exec = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec = gsettings set org.gnome.desktop.interface font-name 'Lekton Regular'
+exec = Hyde cursor theme 'Bibata-Mordern-Ice' size 20
+
+general { 
+  gaps_in = 8
+    gaps_out = 15
+    col.active_border = rgba(00c1e4cc) rgb(B0E0E6) rgb(B0E0E6) rgba(00c1e4cc) 90deg
+    col.inactive_border = rgb(98FB98) rgb(2E8B57) rgb(2E8B57) rgb(98FB98) 90deg
+    border_size = 2
+    resize_on_border = true
+    allow_tearing = false
+    layout = dwindle
+}
+
+decoration {
+  rounding = 7
+    active_opacity = 1
+    inactive_opacity = 0.999
+    drop_shadow = true
+    shadow_range = 20
+    shadow_render_power = 9
+    col.shadow = rgba(0, 0, 0, 1)
+
+    blur {
+      enabled = true
+        size = 3
+        passes = 5
+        noise= 0.01
+        vibrancy = 1
+    }
+}
+layerrule=unset,waybar
